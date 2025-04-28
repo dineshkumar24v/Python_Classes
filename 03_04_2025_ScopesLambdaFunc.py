@@ -22,7 +22,7 @@
 '''Lambda functions : these are not void functions---ie., they have return statements '''
 # LAMBDA Functions : are Anonymous one line functions...
 # mostly we use Lambda functions in Higher order functions -- means 
-# lambda function means use lambda
+# lambda function means use lambda as keyword
 
 # example_lambda = lambda x : x * 2
 # print(example_lambda(5))
@@ -39,8 +39,7 @@
 
 '''higher order functions : are those functions which takes one more function as an argument..... map(),  filter,  reduce'''
 
-''' 1. map()--- generally takes two argumments....
-'''
+''' 1. map()--- generally takes two argumments....''' # map is used to work on individual values...
 # def dbl(y): # double function
   # return y * 2
 
@@ -52,7 +51,7 @@
 # print(list(map(lambda x: x * 2 , [11, 23, 50, 66, -7])))
 
 
-'''filter method :'''
+'''filter method :''' # is used to filter data based on a condition
 
 # print(list(filter(lambda x: x%2==0, [11, 23, 50, 66, -7])))
 
