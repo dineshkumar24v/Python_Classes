@@ -54,7 +54,7 @@
 
 ''' Keyword arbitary arguments: in this we have both keys and values '''
 
-# NOTE: so to get even the keys we of arbitary args we need to use ** double star
+# NOTE: so to get even the keys we use arbitary args we need to use ** double star
 # in this we get output in dictionary form 
 
 # def operation(num1, num2, **c):
@@ -78,5 +78,6 @@ operation(2, 3, server='localhost', port='3308', password='123456', location='In
 # 1 3308
 # 1 123456
 # 1 India
+
 
 
