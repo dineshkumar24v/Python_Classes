@@ -104,7 +104,7 @@ check_prime(17)
 
 
 ''' now lets talk about "return keyword" :'''
-# if we use print it will print the value in the console dats it but we cant use it again 
+# if we use print it will print the value in the console thats it but we cant use it again 
 
 # but by using return we can store that value in a variable and re-use that value where ever needed 
 
@@ -129,3 +129,4 @@ def sum3(a,b):
 res = sum3(2,5)
 print(res)   # (-3, 7, 10)
 print(res*3) # (-3, 7, 10, -3, 7, 10, -3, 7, 10)
+
