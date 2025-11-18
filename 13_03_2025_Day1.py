@@ -7,7 +7,7 @@ print('dinesh', 'sunny', 'bunny', sep='--')   # dinesh--sunny--bunny
 
 # Variables
 int1=29
-print(int1)  # 29
+print(int1)  # 29 
 print(type(int1))   # <class 'int'>
 
 str1='dinesh'
@@ -65,37 +65,45 @@ print(str3[-21])  # s ---- here we get first letter
 print(str3[-1])   # t ---- here we get last letter
 
 
-# Slicing
+# Slicing : ---- means to extract a portion of the string
 print(str3[0 : 9])    # sun rises
-print(str3[3 : 12])   #  rises in
+print(str3[3 : 12])   #  rises in # here 12 means index 12 is excluded that's why we get only till index 11
 print(str3[ : 7])     # sun ris
 print(str3[5 : ])     # ises in the East
 
 
 print(str3[-4 : ])            # East
 print(str3[ : -4])            # sun rises in the 
-print(str3[-4 : -12: -1])     # E eht ni
 
+# s[start : stop : step] // this is the syntax for slicing // where step is optional
+print(str3[-4 : -12: -1])     # E eht ni # ➡️ A negative step (-1) reverses the direction of slicing.
+                              # ➡️ The slice starts at index -4 and moves left until it reaches index -12 (not included).
+# start = where to begin
+# stop = where to end (excluded)
+# step = how to move 
+# +1 → forward (direction)
+# -1 → backward (reverse direction)
 
 # skip 
 
-# skips every alternate number if 2
+# skips every alternate number if 2 is given
 str4='abcdefghijklmnopqrstuvwxyz'
-print(str4[0:26:2])    # acegikmoqsuwy
+print(str4[0:26:2])    # acegikmoqsuwy  # here 0 is starting index, 26 is ending index(excluded), 2 is step (skip every alternate letter)
 
 str5='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-print(str5[0:26:2])    # ACEGIKMOQSUWY
+print(str5[0:26:2])    # ACEGIKMOQSUWY  # here 0 is starting index, 26 is ending index(excluded), 2 is step (skip every alternate letter)
 
 str6='0123456789'
 print(str6[0:26:2])    # 02468
-print(str6[ : :2])     # 02468
-print(str6[ : : ])     # 0123456789
+print(str6[ : :2])     # 02468  # here  is starting index,  is ending index(excluded), 2 is step (skip every alternate letter)
+print(str6[ : : ])     # 0123456789  # here  is starting index,  is ending index(excluded),  is step (print all letters)
 print(type(str6))      # <class 'str'>
 
 
-# COMPLEX NUMBERS
+# COMPLEX NUMBERS are written in the form a + bj, where a is the real part, b is the imaginary part, and j is the imaginary unit.
+# In Python, complex numbers are represented using the 'j' suffix for the imaginary part.
 
-comp1=9 + 10j
+comp1=9 + 10j 
 comp2=6 + 12j
 
 print(comp1+comp2)       # Addition: (9+10j) + (6+12j) = (15+22j)
